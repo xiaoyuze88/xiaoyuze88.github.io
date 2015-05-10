@@ -1,0 +1,8 @@
+markdown: rdiscount
+pygments: true
+auto: true
+permalink: /blog/:year/:month/:day/:title
+paginate: 10 # pagination basted on number of posts
+pygments: true
+server: true
+excerpt_separator: <!--more-->
