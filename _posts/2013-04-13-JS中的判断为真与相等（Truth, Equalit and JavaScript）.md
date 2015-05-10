@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 原创翻译--JS中的判断为真与相等（Truth, Equalit and JavaScript）
+title: （原创翻译）JS中的判断为真与相等（Truth, Equalit and JavaScript）
 tags: JavaScript
 ---
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: 原创翻译--JS中的判断为真与相等（Truth, Equalit and JavaScript--补充
+title: （原创翻译）JS中的判断为真与相等（Truth, Equalit and JavaScript）--补充
 tags: JavaScript
 ---
 
-补充一下我的前一篇文章[原创翻译--JS中的判断为真与相等（Truth, Equalit and JavaScript）]({{site.url}}/blog/2013/04/13/%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91--JS%E4%B8%AD%E7%9A%84%E5%88%A4%E6%96%AD%E4%B8%BA%E7%9C%9F%E4%B8%8E%E7%9B%B8%E7%AD%89%EF%BC%88Truth,%20Equalit%20and%20JavaScript%EF%BC%89/)。
+补充一下我的前一篇文章[（原创翻译）JS中的判断为真与相等（Truth, Equalit and JavaScript）]({% post_url 2013-04-13-JS中的判断为真与相等（Truth, Equalit and JavaScript） %})。
+
 
 文中其他地方都好理解，主要是当 `object` 与其他类型做 `==` ， `+` 等操作时，强制转换类型时调用的 `toPrimitive` 方法多多少少会让人比较迷惑。
 
