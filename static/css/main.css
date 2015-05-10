@@ -2499,3 +2499,6 @@ footer .container a {
         page-break-inside: avoid
     }
 }
+#ds-thread #ds-reset .ds-sort a.ds-current, #ds-thread #ds-reset .ds-sort a:active {
+    color: #000!important;
+}
