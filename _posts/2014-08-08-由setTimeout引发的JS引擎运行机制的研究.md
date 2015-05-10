@@ -2,6 +2,7 @@
 layout: post
 title: 由setTimeout引发的JS引擎运行机制的研究
 tags: JavaScript
+keywords: setTimeout,engine,event loop,javascript引擎,单线程
 ---
 
 太久没碰代码了，那天想到关于循环调用setTimeout实现每隔一秒输出递增的数的那个问题，搞了搞，发现很多概念模糊了，在此总结下。
