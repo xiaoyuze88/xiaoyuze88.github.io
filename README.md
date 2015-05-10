@@ -1,2 +1,2 @@
 # xiaoyuze88.github.io
-Personal blog
+Xiao Yuze's personal blog.
