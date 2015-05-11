@@ -2,6 +2,7 @@
 layout: post
 title: （原创翻译）JS中的判断为真与相等（Truth, Equalit and JavaScript）
 tags: JavaScript
+date: 2013-04-13 20:33
 ---
 
 以前也碰到过几次 `if(x)` 的时候出现预想外的错误，也翻看过许多相关资料，但是一直印象不深。

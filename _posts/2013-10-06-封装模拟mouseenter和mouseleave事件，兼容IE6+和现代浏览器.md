@@ -2,6 +2,7 @@
 layout: post
 title: 封装模拟mouseenter和mouseleave事件，兼容IE6+和现代浏览器
 tags: JavaScript
+date: 2013-10-06 13:50
 ---
 
 最近要写一个使用原生JS的页面，需要用到 `mouseenter` 和 `mouseleave` 事件。

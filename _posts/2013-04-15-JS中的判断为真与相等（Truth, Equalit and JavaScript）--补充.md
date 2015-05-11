@@ -2,6 +2,7 @@
 layout: post
 title: （原创翻译）JS中的判断为真与相等（Truth, Equalit and JavaScript）--补充
 tags: JavaScript
+date: 2013-04-15 20:30
 ---
 
 补充一下我的前一篇文章[（原创翻译）JS中的判断为真与相等（Truth, Equalit and JavaScript）]({% post_url 2013-04-13-JS中的判断为真与相等（Truth, Equalit and JavaScript） %})。
