@@ -33,15 +33,15 @@ title: 首页
           {% endif %}
         </p>
         {% else %}
-<!--         <p class="prev disabled">
+        <p class="prev disabled">
           <span>Previous</span>
-        </p> -->
+        </p>
         {% endif %}
 
         <ul class="pages">
           <li class="page">
             {% if paginator.page == 1 %}
-<!--             <span class="current-page">1</span> -->
+            <span class="current-page">1</span>
             {% else %}
             <a href="/">1</a>
             {% endif %}
@@ -63,9 +63,9 @@ title: 首页
           <a href="/page{{paginator.next_page}}">Next</a>
         </p>
         {% else %}
-<!--         <p class="next disabled">
+        <p class="next disabled">
           <span>Next</span>
-        </p> -->
+        </p>
         {% endif %}
       </div>
 
