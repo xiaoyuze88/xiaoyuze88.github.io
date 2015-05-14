@@ -1,5 +1,5 @@
 _drafts/
 _site/
 .DS_Store
+*.txt
 *.swp
-pgp.txt
