@@ -76,8 +76,8 @@ JS中，每个对象（JS中所有变量都是对象除了`null`和`undefined`�
 
 他们的关系就变成这样了：
     
-    child.__proto__ == Child.prototype;
-    child.__proto__.__proto__ == Child.prototype.__proto__ = Parent.prototype;
+    child.__proto__ -> Child.prototype;
+    child.__proto__.__proto__ -> Child.prototype.__proto__ -> Parent.prototype;
 
 根据向上遍历原型链的规则，当我们访问child.sayHi时，会依次查询`child自身`、`Child.prototype`、`Parent.prototype`， 最终找到`sayHi`方法。
 
