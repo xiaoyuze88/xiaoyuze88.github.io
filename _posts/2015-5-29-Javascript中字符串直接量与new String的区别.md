@@ -6,7 +6,7 @@ description: 分析Javascript中字符串直接量与new String的区别
 date: 2015-05-29 00:03
 ---
 
-我们都知道JS中使用字符串（Number类型情况一模一样）可以直接赋值字符串字面量，或者是`new String("foo")`。
+我们都知道JS中使用字符串可以直接赋值字符串字面量，或者是`new String("foo")`。
 
 但是他们到底有什么区别？我们先看一段代码：
 
@@ -30,14 +30,15 @@ date: 2015-05-29 00:03
 
 但是，为何当我们访问`a.charAt`时能够访问到`String.prototype.charAt`呢？
 
-* 因为当我们尝试访问一个primitive值的属性时，JS引擎内部会调用一个内置[[toObject]] 方法，将字面量的"foo"转为一个[[PrimitiveValue]]为"foo"的String对象，然后从其原型链中尝试查找需要访问的属性，使用结束后再释放掉这个String对象。 *
+* 因为当我们尝试访问一个primitive值的属性时，JS引擎内部会调用一个内置[[toObject]] 方法，将字面量的"foo"转为一个[[PrimitiveValue]]为"foo"的String对象，然后从其原型链中尝试查找需要访问的属性，使用结束后再释放掉这个String对象。 
 
 <!--more-->
 
 关于`[[toObject]]`算法规则如下图：
 
 <img src="{{ site.url }}/downloads/images/string/ECMA-262-5.1-toObject.jpg" alt="内置函数[[toObject]]的规则" style="width:100%;box-sizing: border-box;padding: 2px;border: 1px solid #999;">
-[[toObject]]的计算规则（[ECMA-262/5.1 Edition](http://www.ecma-international.org/ecma-262/5.1/#sec-9.9)）
+
+<p style="text-align: center;">[[toObject]]的计算规则（[ECMA-262/5.1 Edition](http://www.ecma-international.org/ecma-262/5.1/#sec-9.9)）</p>
 
 该逻辑适用于所有primitive类型的字面值(Undefined, Null, Boolean, String, Number)。
 
