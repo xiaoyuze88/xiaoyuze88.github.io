@@ -38,7 +38,7 @@ date: 2015-05-29 00:03
 
 <img src="{{ site.url }}/downloads/images/string/ECMA-262-5.1-toObject.jpg" alt="内置函数[[toObject]]的规则" style="width:100%;box-sizing: border-box;padding: 2px;border: 1px solid #999;">
 
-<p style="text-align: center;">[[toObject]]的计算规则（[ECMA-262/5.1 Edition](http://www.ecma-international.org/ecma-262/5.1/#sec-9.9)）</p>
+[[toObject]]的计算规则（[ECMA-262/5.1 Edition](http://www.ecma-international.org/ecma-262/5.1/#sec-9.9)）
 
 该逻辑适用于所有primitive类型的字面值(Undefined, Null, Boolean, String, Number)。
 
