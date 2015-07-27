@@ -15,9 +15,9 @@ section {
 audio,
 canvas,
 video {
-    display: inline-block;~
-    *display: inline;
-    *zoom: 1
+    display: inline-block;
+    *display: ~"inline";
+    *zoom: ~"1";
 }
 
 audio:not([controls]) {
@@ -118,7 +118,6 @@ textarea {
 
 body {
     margin: 0;
-
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 14px;
@@ -319,6 +318,7 @@ p {
 p:last-child {
     margin-bottom: 20px;
 }
+
 .lead {
     margin-bottom: 20px;
     font-size: 21px;
@@ -2392,6 +2392,7 @@ footer .container {
 .pages {
     list-style: none
 }
+
 .pages li {
     display: inline-block;
 }
@@ -2499,6 +2500,86 @@ footer .container a {
         page-break-inside: avoid
     }
 }
-#ds-thread #ds-reset .ds-sort a.ds-current, #ds-thread #ds-reset .ds-sort a:active {
+
+#ds-thread #ds-reset .ds-sort a.ds-current,
+#ds-thread #ds-reset .ds-sort a:active {
     color: #000!important;
+}
+
+@media (max-width: 768px) {
+    main.container,
+    main.content>.container {
+        width: 100%;
+    }
+    .content {
+        h1 {
+            font-size: 3em;
+        }
+    }
+    .github-fork-ribbon-wrapper {
+        top: 14px;
+        width: 108px;
+        height: 108px;
+        &.right .github-fork-ribbon {
+            right: -61px;
+            top: 30px;
+            a,
+            .github-fork-ribbon a:hover {
+                font-size: 12px;
+            }
+        }
+    }
+    .entries h3 {
+        font-size: 1.375em;
+        line-height: 26px;
+    }
+    p {
+        font-size: 1.125em;
+        line-height: 30px;
+        padding: 0 9px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding: 0 9px;
+        line-height: 1.5;
+    }
+    h6 {
+        font-size: 1.14em;
+    }
+    h5 {
+        font-size: 1.18em;
+    }
+    h4 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.24em;
+    }
+    h2 {
+        font-size: 1.28em;
+    }
+    h1 {
+        font-size: 1.32em;
+    }
+    .post {
+        h2 {
+            font-size: 1.375em;
+            padding-top: 78px;
+            padding-bottom: 0;
+        }
+        h5 {
+            margin-top: 35px;
+            font-size: 1em;
+        }
+    }
+    .home-icon {
+        margin-top: 35px;
+    }
+    #ds-thread {
+        padding: 0 9px!important;
+    }
 }
