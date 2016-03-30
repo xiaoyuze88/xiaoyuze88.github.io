@@ -1,5 +1,5 @@
 markdown: rdiscount
-highlighter: pygments
+highlighter: rouge
 auto: true
 permalink: /blog/:year/:month/:day/:title
 paginate: 10 # pagination basted on number of posts
