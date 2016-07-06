@@ -6,6 +6,6 @@ paginate: 10 # pagination basted on number of posts
 server: true
 excerpt_separator: <!--more-->
 duoshuo_shortname:  xiaoyuze88
-url: http://xiaoyuze88.github.io
-# url: http://localhost:4000
+#url: http://xiaoyuze88.github.io
+url: http://localhost:4000
 # lsi: true
